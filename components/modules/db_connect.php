@@ -1,8 +1,8 @@
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "test";
+$servername = "localhost"; //Server Name (Change)
+$username = "root"; //User Name (Change)
+$password = ""; //Data Table Password (Change)
+$dbname = "test"; //Created Data Table Name (Change)
 
 // Data Table Connection
 $conn = new mysqli($servername, $username, $password, $dbname);
