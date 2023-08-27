@@ -17,7 +17,7 @@ try {
     $postsJsonUrl = "https://jsonplaceholder.typicode.com/posts";
     $commentsJsonUrl = "https://jsonplaceholder.typicode.com/comments";
 
-    // Download And Pased Blog
+    // Download And Paste Blog
     $postsData = fetchData($postsJsonUrl);
     foreach ($postsData as $post) {
         $id = $post['id'];
@@ -29,7 +29,7 @@ try {
         $stmt->execute([$id, $userId, $title, $body]);
     }
 
-    // Download And Pased Comments
+    // Download And Paste Comments
     $commentsData = fetchData($commentsJsonUrl);
     foreach ($commentsData as $comment) {
         $id = $comment['id'];
